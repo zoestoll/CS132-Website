@@ -1,0 +1,355 @@
+/** Main Styles */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-image: url('../images/lizard.jpg');
+    /*background-color: #cccccc;*/  
+}
+.small-caps {
+    font-variant: small-caps;
+}
+
+.container {
+    width: 100%;
+    max-width: 2000px !important;
+    padding: 10px 30px;
+    /*margin: 0 auto;*/
+}
+
+.highlight-card {
+    min-height: 200px;
+    margin-top: -300px;
+    background-color: transparent !important;
+    /*border-top-left-radius: 5px;*/
+    /*border-top-right-radius: 5px;*/
+}
+
+nav .container, footer .container {
+    padding: 0 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+h3 {
+    /*border-bottom: 1px solid #EBEBEB;*/
+    margin-bottom: 15px;
+}
+
+h3.small-caps {
+    font-size: 1.5em;
+    text-transform: lowercase;
+    font-weight: 500;
+}
+
+a, a:hover, a:active, a:focus {
+    color: #009933;
+}
+
+.text-muted {
+    opacity: 0.6;
+    font-size: 0.9em;
+}
+
+.footnote {
+    margin-top: 30px;
+}
+
+/** Nav */
+
+.navbar {
+    background-color: black;
+    /*color: white;*/
+    border-radius: 0;
+    border: 0;
+    box-shadow: white 0px 0px 12px 0px;
+    margin-bottom: 0;
+}
+
+/*.nav > li > a {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 11px;
+}*/
+
+.navbar-default .navbar-nav > .active > a {
+    background-color: transparent !important;
+}
+
+.status {
+    display: none;
+}
+
+.status i {
+    font-size: 7px;
+    margin-bottom: 2px;
+    margin-right: 5px;
+    vertical-align: middle;
+    color: white;
+}
+
+.status.online i {
+    color: #ffffff;
+}
+
+/* Center the navigation */
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+    .navbar.navbar-collapse {
+        text-align: center;
+    }
+    .status, .online .pulse-ring {
+        display: inline-block;
+    }
+}
+
+/** view_top */
+
+.view_top {
+    /*background-color: #009933;*/
+    background: url('../images/lizard.jpg');
+    background-size: auto;
+    background-attachment:fixed;
+    padding-bottom: 10px;
+    font-family: "Trebuchet MS", Courier, monospace;
+    font-style: italic;
+}
+
+.view_top.container {
+    /*background-repeat: no-repeat;*/
+    /*background-position: 90% 100%;*/
+    /*background-size: auto 260px;*/
+}
+
+.view_top h1 {
+    /*font-family: "Lobster Two";*/
+
+    font-size: 4em;
+    text-shadow: 2px 2px #009933;
+    margin-bottom: 15px;
+}
+
+.view_top.home h1 {
+    text-transform: lowercase;
+
+    font-size: 8em;
+    line-height: 0.8em;
+
+    margin: 0;
+}
+
+.view_top h2 {
+    margin-top: 0;
+    /*color: white;*/
+    /*margin-bottom: 50px;*/
+}
+
+@media (max-width: 768px) {
+    .view_top .container {
+        padding: 10px 0px;
+    }
+    .view_top h1 {
+        font-size: 3.2em;
+    }
+}
+
+/** About */
+
+.about h3 {
+    border-bottom: none;
+    margin-bottom: 10px;
+}
+
+/** Announcements */
+
+/*.announcements-list li {
+    margin-bottom: 20px;
+}
+
+.announcements-list h4 {
+    margin-bottom: 0;
+}*/
+
+.announcements .container {
+     background-color: transparent !important;
+}
+
+/** Lectures **/
+
+.lecture-table.container {
+    background-color: white;
+}
+
+/** Assignments */
+
+.current-link {
+    font-size: 2em;
+    opacity: 0.9;
+}
+
+.current-link .fa {
+    margin-left: 7px;
+    transition: margin 0.1s ease-in;
+}
+
+.current-link:hover {
+    opacity: 1.0;
+}
+
+.current-link a:hover, a:focus, a:active {
+    text-decoration: none;
+}
+
+.current-link a:hover .fa {
+    margin-left: 12px;
+    transition: margin 0.1s ease-out;
+}
+
+.deadline {
+    font-weight: bold;
+}
+
+table {
+    /*font-color: red;*/
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+}
+
+td, th {
+    border: 3px solid black;
+    text-align: center;
+    color: white;
+    /*padding: 8px;*/
+}
+
+tr:nth-child(even) {
+    font-color: red;
+    /*background-color: #dddddd;*/
+}
+
+.table td ul {
+    padding-left: 15px;
+}
+
+
+/** Responsive Tables 
+* http://css-tricks.com/responsive-data-tables/
+*/
+
+/** TA Hours */
+
+.staff-update-soon {
+    text-align: center;
+}
+
+/** Lectures */
+
+/** News **/
+
+.news .container {
+    overflow: auto;
+}
+
+/** Staff */
+
+.staff.container {
+    overflow: auto;
+}
+
+.staff h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #EBEBEB;
+    margin-bottom: 25px;
+}
+
+.tas h2 {
+    margin-bottom: 10px;
+}
+
+.tas {
+    clear: both;
+}
+
+.staff p {
+    margin-bottom: 0;
+}
+
+.staff ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.info {
+    margin: 15px 0px;
+}
+
+@media only screen and (min-width: 400px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+
+.profile-picture:hover, .profile-picture.hover {
+}
+
+/** Staff Pictures */
+
+.head-tas .profile-picture {
+    background-image: url(' ../images/htas.jpg');
+}
+
+.head-tas .profile-picture:hover {
+    background-position: 100% 0%;
+}
+
+
+/** Footer */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: #4d4d4d;
+}
+
+@media (max-width: 768px) {
+    .footer p:first-child {
+        margin-bottom: 0;
+    }
+
+    .footer .text-right {
+        text-align: left;
+        margin-top: 0;
+    }
+}
+
+.lectures {
+    color: #333333;
+}
+
+.courseName {
+    color: red;
+}
