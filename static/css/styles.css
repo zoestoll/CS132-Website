@@ -8,26 +8,31 @@ html {
 body {
     background-color: transparent !important;
     background-position: right; 
+    padding-bottom: 100px;
 }
 
 .index_main {
     background-image: url('../images/lizard.jpg');
-    /*background-color: #cccccc;*/  
 }
 
 .assign_main {
     background-image: url('../images/happy_lizard.jpg');
-    /*background-color: #cccccc;*/  
 }
 
 .lectures_main {
     background-image: url('../images/green_lizard.jpg');
-    /*background-color: #cccccc;*/  
 }
 
 .labs_main {
     background-image: url('../images/blue_lizard.jpg');
-    /*background-color: #cccccc;*/  
+}
+
+.resources_main {
+    background-image: url('../images/rock_lizard.jpg');
+}
+
+.staff_main {
+    background-image: url('../images/baby_lizard.jpg');
 }
 
 .small-caps {
@@ -39,15 +44,12 @@ body {
     max-width: 2000px !important;
     padding: 10px 30px;
     background-color: transparent !important;
-    /*margin: 0 auto;*/
 }
 
 .highlight-card {
     min-height: 200px;
     margin-top: -300px;
     background-color: transparent !important;
-    /*border-top-left-radius: 5px;*/
-    /*border-top-right-radius: 5px;*/
 }
 
 nav .container, footer .container {
@@ -60,24 +62,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h3 {
-    /*border-bottom: 1px solid #EBEBEB;*/
     margin-bottom: 15px;
 }
-
-/*h3.small-caps {
-    font-size: 1.5em;
-    text-transform: lowercase;
-    font-weight: 500;
-}
-*/
 a, a:hover, a:active, a:focus {
     color: white;
 }
-/*
-.text-muted {
-    opacity: 0.6;
-    font-size: 0.9em;
-}*/
 
 .footnote {
     margin-top: 30px;
@@ -94,31 +83,10 @@ a, a:hover, a:active, a:focus {
     margin-bottom: 0;
 }
 
-/*.nav > li > a {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 11px;
-}*/
-
 .navbar-default .navbar-nav > .active > a {
     background-color: gray;
 }
 
-/*.status {
-    display: none;
-}
-
-.status i {
-    font-size: 7px;
-    margin-bottom: 2px;
-    margin-right: 5px;
-    vertical-align: middle;
-    color: white;
-}
-
-.status.online i {
-    color: #ffffff;
-}*/
 
 /* Center the navigation */
 @media (min-width: 768px) {
@@ -186,93 +154,7 @@ a, a:hover, a:active, a:focus {
     }
 }
 
-/** About */
-
-.about h3 {
-    border-bottom: none;
-    margin-bottom: 10px;
-}
-
-/** Announcements */
-
-/*.announcements-list li {
-    margin-bottom: 20px;
-}
-
-.announcements-list h4 {
-    margin-bottom: 0;
-}*/
-
-
-.announcements.container {
-     background-color: transparent !important;
-}
-
-/** Lectures **/
-
-.lectures_list table {
-    background-color: white;
-    opacity:0.5;
-    font-size:18px;
-    background-image: linear-gradient(to bottom, black 0%, green 100%); /* the gradient */
-    background-origin: border-box; /* set background to start from border-box */
-    border-spacing: 5px; /* space between each cell */
-    border: 10px solid transparent; /* optional */
-    background-color: transparent !important;
-    /*font-color: red;*/
-    /*font-family: arial, sans-serif;*/
-    border-collapse: collapse;
-    width: 40%;
-}
-
-.labs_list table {
-    border-radius:20px;
-    opacity:0.5;
-    font-size:18px;
-    background-image: linear-gradient(to bottom, lightblue 0%, tan 100%); /* the gradient */
-    background-origin: border-box; /* set background to start from border-box */
-    border-spacing: 5px; /* space between each cell */
-    border: 10px solid transparent; /* optional */
-    background-color: transparent !important;
-    /*font-color: red;*/
-    /*font-family: arial, sans-serif;*/
-    border-collapse: collapse;
-    width: 30%;
-}
-
-.labs_view_top {
-    /*padding-bottom: 0px;*/
-}
-
-
 /** Assignments */
-
-.current-link {
-    font-size: 2em;
-    opacity: 0.9;
-}
-
-.current-link .fa {
-    margin-left: 7px;
-    transition: margin 0.1s ease-in;
-}
-
-.current-link:hover {
-    opacity: 1.0;
-}
-
-.current-link a:hover, a:focus, a:active {
-    text-decoration: none;
-}
-
-.current-link a:hover .fa {
-    margin-left: 12px;
-    transition: margin 0.1s ease-out;
-}
-
-.deadline {
-    font-weight: bold;
-}
 
 .assignments_list table {
     opacity:0.5;
@@ -312,23 +194,104 @@ tr:nth-child(even) {
     opacity:0.8;
 }
 
-/*.table td ul {
-    padding-left: 15px;
-    padding-bottom: 15px;
-}*/
 
+/** Lectures **/
 
-/** Responsive Tables 
-* http://css-tricks.com/responsive-data-tables/
-*/
-
-/** TA Hours */
-
-.staff-update-soon {
-    text-align: center;
+.lectures_list table {
+    background-color: white;
+    opacity:0.5;
+    font-size:18px;
+    background-image: linear-gradient(to bottom, black 0%, green 100%); /* the gradient */
+    background-origin: border-box; /* set background to start from border-box */
+    border-spacing: 5px; /* space between each cell */
+    border: 10px solid transparent; /* optional */
+    background-color: transparent !important;
+    /*font-color: red;*/
+    /*font-family: arial, sans-serif;*/
+    border-collapse: collapse;
+    width: 40%;
 }
 
-/** Lectures */
+/** Labs **/
+
+.labs_list table {
+    /*display: table-row;*/
+    vertical-align: top;
+    padding-bottom: 200px;
+    border-radius:20px;
+    opacity:0.5;
+    font-size:18px;
+    background-image: linear-gradient(to bottom, lightblue 0%, tan 100%); /* the gradient */
+    background-origin: border-box; /* set background to start from border-box */
+    border-spacing: 5px; /* space between each cell */
+    border: 10px solid transparent; /* optional */
+    background-color: transparent !important;
+    border-collapse: collapse;
+    width: 30%;
+}
+
+
+/** Resources **/
+
+.resources {
+    padding-left: 40px;
+}
+
+.resources h3 {
+    font-family: Lucida Grande;
+    color: yellow;
+}
+
+.resources ul {
+    list-style-type: none;
+    background-image: linear-gradient(to bottom, cyan 0%, black 100%);
+    padding: 10px;
+    opacity: 0.8;
+    width: 40%;
+}
+
+.resources_accordion {
+    text-decoration: none;
+    /*background-color: #eee;*/
+    color: #444;
+    cursor: pointer;
+    /*padding: 18px;*/
+    width: 100%;
+    border: none;
+    /*text-align: left;*/
+    outline: none;
+    /*font-size: 15px;*/
+    /*transition: 0.4s;*/
+}
+
+.resources_accordion.active, .resources_accordion:hover {
+    /*display:inline-block;*/
+    background-color:rgba(255,0,205,0.5);
+}
+
+.resources_accordion:before {
+    /*display:inline-block;*/
+    content: '\002B  ';
+    color: yellow;
+    /*font-weight: bold;*/
+    font-size: 24px;
+    /*padding-left: -24px;*/
+    /*float: right;*/
+    /*margin-left: 5px;*/
+}
+
+.resources_accordion.active:before {
+    content: "\2212  ";
+}
+
+div.panel {
+    /*padding: 0 18px;*/
+    background-color: white;
+    /*max-height: 0;*/
+    overflow: hidden;
+    /*transition: max-height 0.2s ease-out;*/
+}
+
 
 /** News **/
 
@@ -338,33 +301,47 @@ tr:nth-child(even) {
 
 /** Staff */
 
-.staff.container {
-    overflow: auto;
-}
-
-.staff h2 {
-    font-size: 1.5em;
-    border-bottom: 1px solid #EBEBEB;
-    margin-bottom: 25px;
-}
-
-.tas h2 {
-    margin-bottom: 10px;
-}
-
-.tas {
-    clear: both;
-}
-
-.staff p {
-    margin-bottom: 0;
-}
-
-.staff ul {
+.staff_header ul {
     list-style: none;
     padding-left: 0;
+    -webkit-column-count: 2;
+    column-count: 2;
 }
 
+.staff_list {
+    /*color: black;*/
+    background-color:rgba(255,220,150,0.5);
+    /*color: #444;*/
+    cursor: pointer;
+    padding-bottom: 18px;
+    width: 60%;
+    border: none;
+    float: left;
+    text-align: left;
+    /*outline: none;*/
+    font-size: 20px;
+    margin-bottom:60px;
+    margin-left:60px;
+    padding-left:60px;
+    transition: 0.4s;
+}
+
+.staff_pic:hover{
+    background-image: url('../images/lizard.jpg');
+}
+
+.staff_pic:hover, .staff_pic.hover {
+}
+
+.staff_pic {
+    height: 100px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-image: url('../images/small_lizard_3.jpg');
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    transition-duration:0.3s;
+}
 .info {
     margin: 15px 0px;
 }
@@ -399,23 +376,30 @@ tr:nth-child(even) {
     background-position: 100% 0%;
 }
 
+/* Staff */
+
+div {
+    /*width: 150px;*/
+    /*height: 200px;*/
+    overflow-y: auto;
+}
 
 /** Footer */
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  width: 100%;
-  background-color: #4d4d4d;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    background-color: black;
 }
 
 @media (max-width: 768px) {
     .footer p:first-child {
         margin-bottom: 0;
     }
-
     .footer .text-right {
         text-align: left;
         margin-top: 0;
@@ -426,6 +410,6 @@ tr:nth-child(even) {
     color: #333333;
 }
 
-.courseName {
-    color: red;
+.footer_title {
+    color: white;
 }
