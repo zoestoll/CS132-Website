@@ -1,4 +1,4 @@
-/** Main Styles */
+/******************* Universal *******************/
 
 html {
     position: relative;
@@ -9,34 +9,6 @@ body {
     background-color: transparent !important;
     background-position: right; 
     padding-bottom: 100px;
-}
-
-.index_main {
-    background-image: url('../images/lizard.jpg');
-}
-
-.assign_main {
-    background-image: url('../images/happy_lizard.jpg');
-}
-
-.lectures_main {
-    background-image: url('../images/green_lizard.jpg');
-}
-
-.labs_main {
-    background-image: url('../images/blue_lizard.jpg');
-}
-
-.resources_main {
-    background-image: url('../images/rock_lizard.jpg');
-}
-
-.staff_main {
-    background-image: url('../images/baby_lizard.jpg');
-}
-
-.small-caps {
-    font-variant: small-caps;
 }
 
 .container {
@@ -53,7 +25,6 @@ body {
 }
 
 nav .container, footer .container {
-
     padding: 0 30px;
 }
 
@@ -72,11 +43,10 @@ a, a:hover, a:active, a:focus {
     margin-top: 30px;
 }
 
-/** Nav */
+/******************* Navigation *******************/
 
 .navbar {
     background-color: black;
-    /*color: white;*/
     border-radius: 0;
     border: 0;
     box-shadow: white 0px 0px 12px 0px;
@@ -87,47 +57,18 @@ a, a:hover, a:active, a:focus {
     background-color: gray;
 }
 
-
-/* Center the navigation */
-@media (min-width: 768px) {
-    .navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
-    }
-    .navbar.navbar-collapse {
-        text-align: center;
-    }
-    .status, .online .pulse-ring {
-        display: inline-block;
-    }
-}
-
-/** view_top */
+/******************* Header *******************/
 
 .view_top {
-    /*padding-bottom: 25px;*/
-    /*background-color: #009933;*/
-    /*background: url('../images/lizard.jpg');*/
     background-size: auto;
     background-attachment:fixed;
-    /*padding-bottom: 10px;*/
     font-family: "Trebuchet MS", Courier, monospace;
     font-style: italic;
 }
 
-.view_top.container {
-    /*background-repeat: no-repeat;*/
-    /*background-position: 90% 100%;*/
-    /*background-size: auto 260px;*/
-}
-
 .view_top h1 {
-    /*font-family: "Lobster Two";*/
-
-    font-size: 4em;
-    text-shadow: 2px 2px #009933;
-    /*margin-bottom: 15px;*/
+    font-size: 60px;
+    text-shadow: 2px 2px green;
 }
 
 .view_top.home h1 {
@@ -141,97 +82,184 @@ a, a:hover, a:active, a:focus {
 
 .view_top h2 {
     margin-top: 0;
-    /*color: white;*/
-    /*margin-bottom: 50px;*/
 }
 
-@media (max-width: 768px) {
-    .view_top .container {
-        padding: 10px 0px;
-    }
-    .view_top h1 {
-        font-size: 3.2em;
-    }
+/******************* Home *******************/
+
+.index_main {
+    background-image: url('../images/lizard.jpg');
 }
 
-/** Assignments */
+.course_info {
+    font-family: Lucida Grande;
+    border-radius: 50px;
+    width: 50%;
+    color: black;
+    text-align: center;
+    background-color:rgba(255,255,255,0.8);
+}
+
+.course_info h1 {
+    color:green;
+}
+
+.course_info h2{
+    font-size: 24px;
+    color:green;
+}
+.course_info h3{
+    color:green;
+    text-decoration: italic;
+    font-size: 18px;
+}
+
+.course_info p {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.course_info li {
+    text-align: left;
+}
+
+/******************* News *******************/
+
+.news_main {
+    background-image: url('../images/chameleon.jpg');
+    background-size: 110%;
+}
+
+.news_list{
+    /* Font settings */
+    color: black;
+    font-size: 24px;
+    /* Background settings */
+    border-spacing: 5px;
+    /*background-image: linear-gradient(to bottom, green 0%, yellow 100%); /* the gradient */*/
+     /* Position settings */
+    margin-left: 100px;
+    width: 50%;
+}
+
+.news_list h1 {
+    color: black;
+    margin-left: 25px;
+}
+
+.news_list p {
+    font-size: 18px;
+    color: black;
+    margin-left: 25px;
+}
+
+/******************* Assignments *******************/
+
+.assign_main {
+    background-image: url('../images/happy_lizard.jpg');
+}
 
 .assignments_list table {
-    opacity:0.5;
+    /* Font settings */
+    font-family: Lucida Grande;
     font-size:18px;
+    /* Background settings */
     background-image: linear-gradient(to bottom, red 0%, blue 100%); /* the gradient */
-    background-origin: border-box; /* set background to start from border-box */
-    border-spacing: 5px; /* space between each cell */
-    border: 10px solid transparent; /* optional */
-    background-color: transparent !important;
-    /*font-color: red;*/
-    /*font-family: arial, sans-serif;*/
-    border-collapse: collapse;
+    background-origin: border-box;
+    opacity:0.5;
+    /* Border settings */
+    border-spacing: 5px;
+    border: 10px solid transparent;
+    /* Position settings */
     width: 30%;
 }
 
 th {
     text-align: left;
     color: white;
-    /*background:gray;*/
-    /*background-color:rgba(255,222,0,0.8);*/
 }
 
 td {
     padding-top: 15px;
-    /*border: 3px solid black;*/
     text-align: left;
     color: black;
-    /*background:gray;*/
-    /*background-color:rgba(255,222,0,0.5);*/
-    /*opacity:0.2;*/
     background-color:rgba(255,225,205,0.5);
 }
 
-tr:nth-child(even) {
-    /*font-color: red;*/
-    /*background-color: gray;*/
+.assignments_list tr:nth-child(even) {
     opacity:0.8;
 }
 
+/******************* Calendar *******************/
 
-/** Lectures **/
-
-.lectures_list table {
-    background-color: white;
-    opacity:0.5;
-    font-size:18px;
-    background-image: linear-gradient(to bottom, black 0%, green 100%); /* the gradient */
-    background-origin: border-box; /* set background to start from border-box */
-    border-spacing: 5px; /* space between each cell */
-    border: 10px solid transparent; /* optional */
-    background-color: transparent !important;
-    /*font-color: red;*/
-    /*font-family: arial, sans-serif;*/
-    border-collapse: collapse;
-    width: 40%;
+.calendar_main {
+    background-image: url('../images/dancing_lizard.jpg');
 }
 
-/** Labs **/
+.embedded_calendar {
+    /* Font */
+    font-weight: bold;
+    color: white;
+    /* Position */
+    position: relative;
+    text-align: center;
+}
 
-.labs_list table {
-    /*display: table-row;*/
-    vertical-align: top;
-    padding-bottom: 200px;
-    border-radius:20px;
+/******************* Lectures *******************/
+
+.lectures_main {
+    background-image: url('../images/green_lizard.jpg');
+}
+
+.lectures_list table {
+    /* Font */
+    font-family: Lucida Grande;
+    font-size: 18px;
+    /* Background */
+    background-image: linear-gradient(to bottom, black 0%, green 100%); /* the gradient */
+    background-origin: border-box;
     opacity:0.5;
-    font-size:18px;
-    background-image: linear-gradient(to bottom, lightblue 0%, tan 100%); /* the gradient */
-    background-origin: border-box; /* set background to start from border-box */
-    border-spacing: 5px; /* space between each cell */
-    border: 10px solid transparent; /* optional */
+    /* Border */
+    border-spacing: 5px;
+    border: 10px solid transparent;
     background-color: transparent !important;
     border-collapse: collapse;
+    /* Position */
     width: 30%;
 }
 
+/******************* Labs *******************/
 
-/** Resources **/
+.labs_main {
+    background-image: url('../images/blue_lizard.jpg');
+}
+
+.labs_list table {
+    /* Font */
+    font-size:18px;
+    font-family: Lucida Grande;
+    /* Position */
+    margin-top: 100px;
+    width: 40%;
+    /* Background */
+    border-radius:20px;
+    background-image: linear-gradient(to bottom, lightblue 0%, tan 100%); /* gradient background color */
+    background-origin: border-box;
+    opacity:0.8;
+    /* Border */
+    border-spacing: 5px;
+    border: 10px solid transparent;
+    border-collapse: collapse;
+}
+
+.labs_list table th, a {
+    color: black;
+}
+
+/******************* Resources *******************/
+
+.resources_main {
+    background-image: url('../images/rock_lizard.jpg');
+}
 
 .resources {
     padding-left: 40px;
@@ -250,34 +278,14 @@ tr:nth-child(even) {
     width: 40%;
 }
 
-.resources_accordion {
-    text-decoration: none;
-    /*background-color: #eee;*/
-    color: #444;
-    cursor: pointer;
-    /*padding: 18px;*/
-    width: 100%;
-    border: none;
-    /*text-align: left;*/
-    outline: none;
-    /*font-size: 15px;*/
-    /*transition: 0.4s;*/
-}
-
 .resources_accordion.active, .resources_accordion:hover {
-    /*display:inline-block;*/
-    background-color:rgba(255,0,205,0.5);
+    background-color:rgba(255,205,205,0.5);
 }
 
 .resources_accordion:before {
-    /*display:inline-block;*/
     content: '\002B  ';
     color: yellow;
-    /*font-weight: bold;*/
     font-size: 24px;
-    /*padding-left: -24px;*/
-    /*float: right;*/
-    /*margin-left: 5px;*/
 }
 
 .resources_accordion.active:before {
@@ -285,21 +293,16 @@ tr:nth-child(even) {
 }
 
 div.panel {
-    /*padding: 0 18px;*/
     background-color: white;
-    /*max-height: 0;*/
     overflow: hidden;
-    /*transition: max-height 0.2s ease-out;*/
 }
 
+/******************* Staff *******************/
 
-/** News **/
-
-.news.container {
-    overflow: auto;
+.staff_main {
+    background-image: url('../images/baby_lizard.jpg');
+    background-size: 120%
 }
-
-/** Staff */
 
 .staff_header ul {
     list-style: none;
@@ -309,16 +312,9 @@ div.panel {
 }
 
 .staff_list {
-    /*color: black;*/
     background-color:rgba(255,220,150,0.5);
-    /*color: #444;*/
-    cursor: pointer;
-    padding-bottom: 18px;
     width: 60%;
-    border: none;
-    float: left;
     text-align: left;
-    /*outline: none;*/
     font-size: 20px;
     margin-bottom:60px;
     margin-left:60px;
@@ -330,9 +326,6 @@ div.panel {
     background-image: url('../images/lizard.jpg');
 }
 
-.staff_pic:hover, .staff_pic.hover {
-}
-
 .staff_pic {
     height: 100px;
     background-size: auto 100%;
@@ -342,68 +335,18 @@ div.panel {
     -webkit-touch-callout: none;
     transition-duration:0.3s;
 }
-.info {
-    margin: 15px 0px;
-}
 
-@media only screen and (min-width: 400px) {
-    .masonry {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
-    }
-}
-
-@media only screen and (min-width: 700px) {
-    .masonry {
-        -moz-column-count: 4;
-        -webkit-column-count: 4;
-        column-count: 4;
-    }
-}
-
-
-.profile-picture:hover, .profile-picture.hover {
-}
-
-/** Staff Pictures */
-
-.head-tas .profile-picture {
-    background-image: url(' ../images/htas.jpg');
-}
-
-.head-tas .profile-picture:hover {
-    background-position: 100% 0%;
-}
-
-/* Staff */
-
-div {
-    /*width: 150px;*/
-    /*height: 200px;*/
-    overflow-y: auto;
-}
-
-/** Footer */
+/******************* Footer *******************/
 
 .footer {
     height: 50px;
     position: fixed;
     bottom: 0;
     margin-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 75px;
+    padding-top: 20px;
     width: 100%;
     background-color: black;
-}
-
-@media (max-width: 768px) {
-    .footer p:first-child {
-        margin-bottom: 0;
-    }
-    .footer .text-right {
-        text-align: left;
-        margin-top: 0;
-    }
 }
 
 .lectures {
